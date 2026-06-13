@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formulario.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <main class="contenedor">
+
+        <form action="../../vistas/resultados/resultados.html" method="get" id="formulario" class="contenido-principal">
+
+            <h2>REGISTRO DE USUARIO</h2>
+
+            <label for="nombre">Nombre</label>
+            <input class="campo" type="text" id="nombre" name="nombre" placeholder="Ingresar nombre" required>
+
+            <label for="email">Correo electrónico</label>
+            <input class="campo" type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+
+            <label for="edad">Edad</label>
+            <input class="campo" type="number" id="edad" name="edad" placeholder="Ingresar edad" required>
+
+            <label for="pais">País de origen</label>
+            <select class="campo" name="pais" id="pais" required>
+                <option value="">Seleccione un país</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Perú">Perú</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Colombia">Colombia</option>
+                <option value="México">México</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="España">España</option>
+                <option value="Italia">Italia</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Francia">Francia</option>
+                <option value="Inglaterra">Inglaterra</option>
+            </select>
+            </select>
+
+            <div class="terminos">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones</label>
+            </div>
+
+            <div class="botones">
+                <button class="limpiar" type="reset">Limpiar</button>
+                <button class="enviar" type="submit">Enviar</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="./formulario.js"></script>
+    
+</body>
+
+</html>
